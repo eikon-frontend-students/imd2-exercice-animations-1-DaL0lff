@@ -121,3 +121,137 @@ video {
   height: 80px;
   background: var(--black);
 }
+
+@keyframes turn {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grandir {
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scale(110%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+.button {
+  animation-name: grandir;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes degrade {
+  0% {
+    background-position: 30%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 30%;
+  }
+}
+.background {
+  animation-name: degrade;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes part {
+  from {
+    transform: translate(0);
+    opacity: 100%;
+  }
+
+  to {
+    transform: translateX(30px) translateY(-60px);
+    opacity: 0%;
+  }
+}
+.submit-plane {
+  animation-name: part;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes carre {
+  0% {
+    transform: translateX(180px) translateY(130px);
+  }
+
+  50% {
+    transform: translateX(-180px) translateY(-125px);
+  }
+
+  100% {
+    transform: translateX(180px) translateY(130px);
+  }
+}
+.pong-ball {
+  animation-name: carre;
+  animation-duration: 7.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes barregauche {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(0px) translateY(-100px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+.pong1 {
+  animation-name: barregauche;
+  animation-duration: 7.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes barredroite {
+  0% {
+    transform: translateX(0px) translateY(100px);
+  }
+
+  50% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(100px);
+  }
+}
+.pong2 {
+  animation-name: barredroite;
+  animation-duration: 7.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
